@@ -1,4 +1,6 @@
 <?php
+// ДЗ 2 Задание 1
+// В зависимости от условия - выводятся или все элементы переданного массива по отдельности, либо слитно
 function task1($array, $choice = false) {
   if ($choice) {
     return implode($array);
@@ -9,6 +11,8 @@ function task1($array, $choice = false) {
   }
 }
 
+// ДЗ 2 Задание 2
+// В зависимости от выбранного оператора происходит вычисление результата
 function task2() {
   $oper = func_get_arg(0);
   $numbers = func_get_args();
@@ -52,6 +56,8 @@ function task2() {
   echo $result . '<br><br>';
 }
 
+// ДЗ 2 Задание 3
+// Вывод таблицы умножения с заданной размерностью
 function task3($num1, $num2) {
   if (is_int($num1) && is_int($num2)) {
     echo('<table>');
@@ -70,16 +76,22 @@ function task3($num1, $num2) {
   }
 }
 
+// ДЗ 2 Задание 4
+// Вывод текущей даты и даты 24.02.2016 00:00:00 по UNIX-времени
 function task4() {
   echo date('d.m.Y H:i') . '<br>';
   echo strtotime('24.02.2016 00:00:00') . '<br><br>';
 }
 
+// ДЗ 2 Задание 5
+// Замена подстрок на другие значения
 function task5($str1, $str2) {
   echo str_replace('К', '', $str1) . '<br>';
   echo str_replace('Две', 'Три', $str2) . '<br>';
 }
 
+// ДЗ 2 Задание 6
+// Запись значения в файл и функция чтения содержимого файла
 function task6($filename) {
   file_put_contents('test.txt', 'Hello again!');
   echo '<br>' . readf($filename) . '<br>';
