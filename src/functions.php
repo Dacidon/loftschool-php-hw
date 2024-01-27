@@ -93,7 +93,7 @@ function task5($str1, $str2) {
 // ДЗ 2 Задание 6
 // Запись значения в файл и функция чтения содержимого файла
 function task6($filename) {
-  file_put_contents('test.txt', 'Hello again!');
+  file_put_contents('testin.txt', 'Hello again!');
   echo '<br>' . readf($filename) . '<br>';
 }
 
