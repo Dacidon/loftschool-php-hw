@@ -6,8 +6,8 @@ abstract class AbstractTariffClass implements CountAddInterface
 {
     protected int $km;
     protected int $min;
-    private int $km_price;
-    private int $min_price;
+    protected int $km_price;
+    protected int $min_price;
     protected array $services;
     private int $total;
     public function __construct(int $km, int $min)
